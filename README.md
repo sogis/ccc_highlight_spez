@@ -1,4 +1,4 @@
-# ccc_highlight_spez
+# Spezifikation Highlight Style CCC
 
 ## Idee
 Mit dieser Methode kann ein Client die dynamisch gerenderten Symbole für die Selektionsanzeige und das Styling der Geometrien im CCC-Edit-Modus setzen.
