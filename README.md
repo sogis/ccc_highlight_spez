@@ -1,5 +1,14 @@
 # ccc_highlight_spez
 
+## Idee
+Mit dieser Methode kann ein Client die dynamisch gerenderten Symbole für die Selektionsanzeige und das Styling der Geometrien im CCC-Edit-Modus setzen.
+
+## Methode
+`setHighlightStyle`
+
+## Entwurf: Umfang einer Darstellungs-Definition
+
+```json
 {
     "circleBorder": 2,
     "circleRadius": 10,
@@ -9,4 +18,5 @@
     "strokeWidth": 2,
     "textFill": "black",
     "textStroke": "white"
-  }
+}
+```
