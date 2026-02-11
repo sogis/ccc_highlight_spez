@@ -3,8 +3,16 @@
 ## Idee
 Mit dieser Methode kann ein Client die dynamisch gerenderten Symbole für die Selektionsanzeige und das Styling der Geometrien im CCC-Edit-Modus setzen.
 
-## Methode
-`setHighlightStyle`
+## Nachricht
+
+
+|Methode|Richtung|Typ|Beschreibung|
+|---|---|---|---|
+|`setHighlightStyle`|F > K|RUN|Aufforderung an die Kartenapplikation, eine Darstellungsdefinition zu übernehmen|
+
+F: Fachapplikation
+
+K: Kartenapplikation (Web GIS Client)
 
 ## Entwurf: Umfang einer Darstellungs-Definition
 
