@@ -29,4 +29,5 @@ K: Kartenapplikation (Web GIS Client)
         "textFill": "black",
         "textStroke": "white"
     }
+}
 ```
