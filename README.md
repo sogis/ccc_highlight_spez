@@ -20,7 +20,7 @@ K: Kartenapplikation (Web GIS Client)
 > [!IMPORTANT]
 > Rückwärtskompatibilität muss gewährleistet sein. Fachapplikationen, die diese Methoden ohne `style`-Attribut verwenden, müssen weiterhin vom Web GIS Client verstanden werden. Als Style soll der heutige Default angewendet werden.
 
-## Entwurf Darstellungs-Definition
+## Darstellungs-Definition
 
 Die JSON-Spezifikationen aus [CCC-Service Spezifikation Version 1.0](https://github.com/sogis/ccc-service/blob/master/docs/res/Spezifikation_CCC_Schnittstelle_V1.0.pdf) werden wie folgt ergänzt: 
 
@@ -34,14 +34,24 @@ Die JSON-Spezifikationen aus [CCC-Service Spezifikation Version 1.0](https://git
     "method": "...",
     [...]
     "style": {
-        "circleBorder": 2,
-        "circleRadius": 10,
-        "fillColor": [255, 255, 64, 0.33],
-        "strokeColor": [255, 128, 0, 1],
-        "strokeDash": [],
+        "strokeColor": [255, 0, 0, 1],
         "strokeWidth": 2,
-        "textFill": "black",
-        "textStroke": "white"
+        "strokeDash": [],
+        "fillColor": [255, 0, 9, 0.5],
+        "circleRadius": 8,
+        "vertexStrokeColor": [255, 0, 0, 1],
+        "vertexFillColor": [255, 255, 255, 1]
     }
+
 }
 ```
+
+Beispiel für `strokeDash`: 
+```
+- - - - => [2, 2]
+- . - . - => [2, 2, 1, 2, 2, 2, 1, 2, 2]
+-- -- -- => [4, 2, 4, 2, 4] 
+```
+
+- Ungerade Elemente der Liste: Breite des Stirches
+- Gerade Elemente der Liste:   Breite des Leerabstandes
